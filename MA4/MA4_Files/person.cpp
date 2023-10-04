@@ -9,7 +9,7 @@ class Person{
 	private:
 		int age;
 	};
- 
+	
 Person::Person(int n){
 	age = n;
 	}
