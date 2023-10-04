@@ -24,7 +24,7 @@ void Person::set(int n){
 	}
 
 int Person :: fib(){
-	int n = this->get()
+	int n = this->get();
 	if (n <= 1){
 		return n; 
 	}
