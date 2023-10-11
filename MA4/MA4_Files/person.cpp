@@ -19,7 +19,7 @@ int Person::get(){
 	return age;
 	}
 
-int _fib(long n){
+long _fib(long n){
 	if (n <= 1){
 		return n;
 	}
@@ -28,7 +28,7 @@ int _fib(long n){
 	}
 }
 
-int Person::fib(){
+long Person::fib(){
 	int n = get();
 	return _fib(n);	
 }
