@@ -19,7 +19,7 @@ int Person::get(){
 	return age;
 	}
  
-void Person::set(n){
+void Person::set(int n){
 	age = n;
 	}
 
@@ -34,7 +34,7 @@ int Person::_fib(int n){
 
 int Person :: fib(){
 	int n = this->get();
-	return this->_fib(int n)
+	return this->_fib(n)
 
 	}
 
