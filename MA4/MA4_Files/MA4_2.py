@@ -8,7 +8,7 @@ import time
 
 def main():
 
-	N = np.linspace(20, 45, 26)
+	N = np.linspace(30, 45, 16)
 	T = []
 	f = Person(0)
 	for x in N:
