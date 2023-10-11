@@ -25,15 +25,11 @@ void Person::set(int n){
 
 int Person :: fib(){
 	int n = this->get();
-	if (n <= 1){
-		return n; 
-	}
-	else {
-		return(this->fib(n-1) + this->fib(n-2));
-	}
+	return this->_fib(int n)
+
 	}
 
-int Person :: _fib(int n){
+int Person::_fib(int n){
 	if (n <= 1){
 		return n; 
 	}
