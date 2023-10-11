@@ -34,8 +34,8 @@ int Person::oj_fib(int n){
 }		
 
 int Person::fib(){
-	int n = this->get();
-	return this->oj_fib(n);
+	int n = get();
+	return oj_fib(n);
 	}
 
 extern "C"{
