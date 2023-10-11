@@ -33,6 +33,15 @@ int Person :: fib(){
 	}
 	}
 
+int Person :: _fib(int n){
+	if (n <= 1){
+		return n; 
+	}
+	else {
+		return(_fib(n-1) + _fib(n-2));
+	}
+}	
+
 extern "C"{
 	Person* Person_new(int n) {return new Person(n);}
 	int Person_get(Person* person) {return person->get();}
