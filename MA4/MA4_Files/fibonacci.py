@@ -33,8 +33,8 @@ for n in fib_lst:
     t_time = e - s  
     py_t_lst.append(t_time)
 
-plt.plot(fib_lst, py_t_lst, label = 'python')
-plt.plot(fib_lst, num_t_lst, label = 'numba')
-plt.legend()
-plt.savefig('fib_py_numba.png')
-plt.show()
+#plt.plot(fib_lst, py_t_lst, label = 'python')
+#plt.plot(fib_lst, num_t_lst, label = 'numba')
+#plt.legend()
+#plt.savefig('fib_py_numba.png')
+#plt.show()
