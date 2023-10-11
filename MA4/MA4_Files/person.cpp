@@ -18,23 +18,23 @@ Person::Person(int n){
 int Person::get(){
 	return age;
 	}
-
-int Person::_fib(int n){
-	if (n <= 1){
-		return n; 
-	}
-	else {
-		return(_fib(n-1) + _fib(n-2));
-	}
-}	
  
 void Person::set(int n){
 	age = n;
 	}
 
+int Person::oj_fib(int n){
+	if (n <= 1){
+		return n; 
+	}
+	else {
+		return(oj_fib(n-1) + oj_fib(n-2));
+	}
+}		
+
 int Person :: fib(){
 	int n = this->get();
-	return this->_fib(n);
+	return this->oj_fib(n);
 	}
 
 extern "C"{
