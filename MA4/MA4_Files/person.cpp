@@ -19,14 +19,8 @@ int Person::get(){
 	return age;
 	}
  
-void Person::set(int n){
+void Person::set(n){
 	age = n;
-	}
-
-int Person :: fib(){
-	int n = this->get();
-	return this->_fib(int n)
-
 	}
 
 int Person::_fib(int n){
@@ -37,6 +31,12 @@ int Person::_fib(int n){
 		return(_fib(n-1) + _fib(n-2));
 	}
 }	
+
+int Person :: fib(){
+	int n = this->get();
+	return this->_fib(int n)
+
+	}
 
 extern "C"{
 	Person* Person_new(int n) {return new Person(n);}
