@@ -34,8 +34,7 @@ int Person::_fib(int n){
 
 int Person :: fib(){
 	int n = this->get();
-	return this->_fib(n)
-
+	return this->_fib(n);
 	}
 
 extern "C"{
