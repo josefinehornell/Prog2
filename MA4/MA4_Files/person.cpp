@@ -7,6 +7,7 @@ class Person{
 		int get();
 		void set(int);
 		int fib();
+		int oj_fib();
 	private:
 		int age;
 	};
@@ -32,7 +33,7 @@ int Person::oj_fib(int n){
 	}
 }		
 
-int Person :: fib(){
+int Person::fib(){
 	int n = this->get();
 	return this->oj_fib(n);
 	}
