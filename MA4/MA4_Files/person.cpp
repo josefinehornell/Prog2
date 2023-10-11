@@ -36,7 +36,7 @@ int Person::oj_fib(int n){
 int Person::fib(){
 	int n = get();
 	return oj_fib(n);
-	}
+}
 
 extern "C"{
 	Person* Person_new(int n) {return new Person(n);}
