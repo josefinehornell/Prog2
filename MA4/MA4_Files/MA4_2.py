@@ -4,7 +4,7 @@ from person import Person
 import matplotlib.pyplot as plt
 import numpy as np
 import time
-from fibonacci import fib_numba, fib_py
+from fibonacci import fib_numba
 
 
 def main():
@@ -12,7 +12,6 @@ def main():
 	fib_n = np.linspace(30, 45, 16)
 	t_c = []
 	t_numb = []
-	t_py = []
 	f = Person(0)
 	for n in fib_n:
 		f.set(int(n))
@@ -25,18 +24,13 @@ def main():
 		fib_numba(n)
 		e = time.perf_counter()
 		t_numb.append(e - s)
-  
-		#s = time.perf_counter()
-		#fib_py(n)
-		#e = time.perf_counter()
-		#t_py.append(e - s)
+
 
 	plt.plot(fib_n,t_c, label = 'c++')
 	plt.plot(fib_n,t_numb, label = 'numba')
-	#plt.plot(fib_n,t_py, label = 'python')
 	plt.legend()
 	plt.title('comparisoin c++ and numba')
-	plt.savefig('c++_numba.png')
+	plt.savefig('hoho_c++_numba.png')
 	print('wow bild')
 
 	print(fib_numba(47))
@@ -46,3 +40,7 @@ def main():
  
 if __name__ == '__main__':
 	main()
+
+#2971215073
+#2971215073
+#haha i made it long instead of int 
