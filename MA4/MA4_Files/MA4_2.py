@@ -1,12 +1,14 @@
 #!/usr/bin/env python3.9
 
 from person import Person
-import numpy as np
-import time 
 import matplotlib.pyplot as plt
+import numpy as np
+import time
+
 
 def main():
-	N = np.linspace(30, 45, 16)
+
+	N = np.linspace(20, 45, 26)
 	T = []
 	f = Person(0)
 	for x in N:
