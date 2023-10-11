@@ -33,14 +33,10 @@ int Person::oj_fib(int n){
 	}
 }		
 
-int Person::fib() {
-    int n = get();
-    if (n <= 1) {
-        return n;
-    } else {
-        return oj_fib(n - 1) + oj_fib(n - 2);
-    }
-}
+int Person::fib(){
+	int n = this->get();
+	return this->oj_fib(n);
+	}
 
 extern "C"{
 	Person* Person_new(int n) {return new Person(n);}
