@@ -18,10 +18,6 @@ Person::Person(int n){
 int Person::get(){
 	return age;
 	}
- 
-void Person::set(int n){
-	age = n;
-	}
 
 int Person::_fib(int n){
 	if (n <= 1){
@@ -31,6 +27,10 @@ int Person::_fib(int n){
 		return(_fib(n-1) + _fib(n-2));
 	}
 }	
+ 
+void Person::set(int n){
+	age = n;
+	}
 
 int Person :: fib(){
 	int n = this->get();
