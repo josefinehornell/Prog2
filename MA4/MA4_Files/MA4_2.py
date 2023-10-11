@@ -1,14 +1,24 @@
 #!/usr/bin/env python3.9
 
 from person import Person
+import numpy as np
+import time 
+import matplotlib.pyplot as plt
 
 def main():
-	f = Person(5)
-	print(f.get())
-	f.set(7)
-	print(f.get())
-	f = Person(3)
-	print(f.fib())
+	N = np.linspace(20, 45, 26)
+	T = []
+	f = Person(0)
+	for x in N:
+		f.set(int(x))
+		start = time.perf_counter()
+		f.fib()
+		stop = time.perf_counter()
+		T.append(stop - start)
+
+	plt.plot(N,T)
+	plt.title('c++')
+	plt.savefig('c++.png')
 
 if __name__ == '__main__':
 	main()
