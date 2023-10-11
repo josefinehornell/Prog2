@@ -37,6 +37,12 @@ def main():
 	plt.legend()
 	plt.title('comparisoin c++, py and numba')
 	plt.savefig('c++.png')
+	print('wow bild')
 
+	print(fib_numba(47))
+	f.set(int(47))
+	print(f.fib())
+	print()
+ 
 if __name__ == '__main__':
 	main()
