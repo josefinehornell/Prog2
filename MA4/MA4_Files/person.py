@@ -21,6 +21,8 @@ class Person(object):
 	def __del__(self):
 		return lib.Person_delete(self.obj)
 
-n =5
+n=5
 f=Person(n)
 f.fib()
+
+print(f.fib())
