@@ -4,7 +4,7 @@ from person import Person
 import matplotlib.pyplot as plt
 import numpy as np
 import time
-from fibonacci import fib_numba, fib_py
+from MA4.MA4_Files.fibonacci import fib_numba, fib_py
 
 
 def main():
