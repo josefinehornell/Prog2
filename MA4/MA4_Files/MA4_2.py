@@ -36,7 +36,7 @@ def main():
 	plt.plot(fib_n,t_py, label = 'python')
 	plt.legend()
 	plt.title('comparisoin c++, py and numba')
-	plt.savefig('c++.png')
+	plt.savefig('c_num_py.png')
 	print('wow bild')
 
 	print(fib_numba(47))
