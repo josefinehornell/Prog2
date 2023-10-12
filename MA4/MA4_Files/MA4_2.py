@@ -1,10 +1,18 @@
+"""
+Solutions to module 4
+Student: Josefine Hörnell
+Mail: josefine.honell@gmail.com
+Reviewed by: Ema Duljkovic 
+Reviewed date: 12/10
+"""
+
 #!/usr/bin/env python3.9
 
 from person import Person
 import matplotlib.pyplot as plt
 import numpy as np
 import time
-from fibonacci import fib_numba
+from fibonacci import fib_numba, fib_py
 
 
 def main():
@@ -12,6 +20,7 @@ def main():
 	fib_n = np.linspace(30, 45, 16)
 	t_c = []
 	t_numb = []
+	t_py = []
 	f = Person(0)
 	for n in fib_n:
 		f.set(int(n))
@@ -25,9 +34,15 @@ def main():
 		e = time.perf_counter()
 		t_numb.append(e - s)
 
+		s = time.perf_counter()
+		fib_py(n)
+		e = time.perf_counter()
+		t_numb.append(e - s)
+
 
 	plt.plot(fib_n,t_c, label = 'c++')
 	plt.plot(fib_n,t_numb, label = 'numba')
+	plt.plot(fib_n, t_py, label = 'pyhon')
 	plt.legend()
 	plt.title('comparisoin c++ and numba')
 	plt.savefig('hoho_c++_numba.png')

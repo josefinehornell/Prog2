@@ -1,3 +1,11 @@
+"""
+Solutions to module 4
+Student: Josefine Hörnell
+Mail: josefine.honell@gmail.com
+Reviewed by:
+Reviewed date:
+"""
+
 import math
 import random 
 from time import perf_counter as pc
@@ -44,7 +52,6 @@ if __name__ == "__main__":
     start = pc()
     with future.ProcessPoolExecutor() as ex:
         futures = [ex.submit(cal_Vd_exp, n_pal, d) for _ in range(num_runs_pal)]
-        # Collect and print results
         results = [future.result() for future in future.as_completed(futures)]
     end = pc()
     print(f"Process took with  parallell programming {round(end-start, 2)/num_runs} seconds")
